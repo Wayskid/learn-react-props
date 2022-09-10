@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Ubuntu:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+#root{
+    height: 100vh;
+    display: grid;
+    background-color: rgb(212, 252, 252);
+    align-content: center;
+    justify-items: center;
+}
+
+.containerBody{
+    display: grid;
+    align-items: center;
+    padding: 1.5rem;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    width: min(900px, 100%);
+    position: relative;
+}
+
+.header{
+    position: absolute;
+    top: -5rem;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.jokesCard{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    background-color: #137be3;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 7px 15px -4px rgb(58, 58, 58);
+}
+
+.setup{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(18, 66, 66);
+}
+
+.joke{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    color: aqua;
+}
